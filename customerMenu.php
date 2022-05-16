@@ -23,7 +23,7 @@ $result = $conn->query($sql);
 <html>
 
 <head>
-    <title>Welcome <?= $_SESSION['sess_user']; ?></title>
+    <title>Coffee Hub | Menu</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <meta name="viewpoint" content="width=device-width, intial-scale=1.0">

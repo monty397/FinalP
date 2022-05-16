@@ -20,7 +20,7 @@ $username = $_SESSION['sess_cUser'];
 <html>
 
 <head>
-    <title>Coffee Hub | Order Table</title>
+    <title>Coffee Hub | Orders</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <meta name="viewpoint" content="width=device-width, intial-scale=1">

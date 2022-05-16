@@ -20,7 +20,7 @@ $username = $_SESSION['sess_cUser'];
 <html>
 
 <head>
-    <title>Coffee Hub | Employee Table</title>
+    <title>Coffee Hub | Employees</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <meta name="viewpoint" content="width=device-width, intial-scale=1">
@@ -58,6 +58,8 @@ $username = $_SESSION['sess_cUser'];
             </ul>
         </nav>
     </div>
+
+    <h1 id="title">Employees</h1>
     <table class="content-table">
         <thead>
             <tr>

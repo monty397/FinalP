@@ -6,14 +6,15 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #6699FF;
+    background-image: url("coffeeb.jpg");
+    /* background-color: #FFEEB4; */
 }
 
 
 /*----------- h tags -------------*/
 
 h1 {
-    color: gold;
+    color: blue;
     text-align: center;
     margin-top: 0px;
     float: center;
@@ -40,6 +41,14 @@ h3 {
 
 pre {
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#title {
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 100px;
+    margin-left: -1150px;
+    /* margin-right: 1220px; */
+    color: black;
 }
 
 
@@ -883,7 +892,7 @@ input[type="number"] {
     overflow-x: auto;
     background-color: white;
     border-collapse: collapse;
-    margin: 100px auto;
+    margin: 50px auto;
     font-size: 0.9em;
     min-width: 75%;
     border-radius: 5px 5px 0 0;

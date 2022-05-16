@@ -34,7 +34,7 @@ if ($numrows != 0) {
 <html>
 
 <head>
-    <title>Welcome <?= $_SESSION['sess_user']; ?></title>
+    <title>Coffee Hub | My Orders</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <meta name="viewpoint" content="width=device-width, intial-scale=1.0">
@@ -67,6 +67,7 @@ if ($numrows != 0) {
         </nav>
     </div>
 
+    <h1 id="title">My Orders</h1>
     <table class="content-table">
         <thead>
             <tr>

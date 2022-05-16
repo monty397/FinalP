@@ -25,7 +25,7 @@ $row = mysqli_fetch_array($query);
 <html>
 
 <head>
-    <title>Welcome <?= $_SESSION['sess_cUser']; ?></title>
+    <title>Coffee Hub | Update Status</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <meta name="viewpoint" content="width=device-width, intial-scale=1.0">

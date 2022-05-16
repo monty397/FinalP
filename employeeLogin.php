@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Coffee Hub | Admin Login</title>
+    <title>Coffee Hub | Employee Login</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <meta name="viewpoint" content="width=device-width, intial-scale=1.0">

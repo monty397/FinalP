@@ -20,7 +20,7 @@ if ($conn === false) {
 <html>
 
 <head>
-    <title>Coffee Hub | Add Employees</title>
+    <title>Coffee Hub | Register Employee</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <meta name="viewpoint" content="width=device-width, intial-scale=1.0">

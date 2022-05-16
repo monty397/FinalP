@@ -38,7 +38,6 @@
 
     <div class="home-container1">
         <h1>Welcome to Coffee Hub</h1>
-        <h2>Where our coffee is prepared to satsify the ones we care about most, You!</h2>
     </div>
 
     <div class="container">
@@ -91,7 +90,7 @@
         </div>
         <div class="box2">
             <div>
-                <img class="home_img" src="socials.jpg">
+                <img class="home_img" src="socials.png">
             </div>
             <h2>Our Socials</h2>
             <p></p>
@@ -143,7 +142,7 @@
             </div>
         </div>
     </footer>
-    
+
     <script>
         //Get the button
         var mybutton = document.getElementById("myBtn");

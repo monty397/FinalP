@@ -54,6 +54,8 @@ $username = $_SESSION['sess_user'];
         </nav>
     </div>
 
+    <h1 id="title">Customer Info</h1>
+
     <table class="content-table">
         <thead>
             <tr>

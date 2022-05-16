@@ -22,7 +22,7 @@ $result = $conn->query($sql);
 <html>
 
 <head>
-    <title>Coffee Hub | My Employee Information</title>
+    <title>Coffee Hub | My Admin Information</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <meta name="viewpoint" content="width=device-width, intial-scale=1">
@@ -61,8 +61,9 @@ $result = $conn->query($sql);
         </nav>
     </div>
 
+    <h1 id="title">My Info</h1>
     <table class="content-table">
-    <thead>
+        <thead>
             <tr>
                 <th style="text-align:center;"></th>
                 <th style="text-align:center;"></th>

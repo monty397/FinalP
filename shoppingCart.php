@@ -77,7 +77,7 @@ if (isset($_POST['removeItem'])) {
 <html>
 
 <head>
-    <title>Welcome <?= $_SESSION['sess_user']; ?></title>
+    <title>Coffee Hub | My Cart</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <meta name="viewpoint" content="width=device-width, intial-scale=1.0">
@@ -109,6 +109,9 @@ if (isset($_POST['removeItem'])) {
             </ul>
         </nav>
     </div>
+
+    <h1 id="title">My Cart</h1>
+
     <form method="POST" action="">
         <?php
         $output = "";
