@@ -47,8 +47,8 @@ $username = $_SESSION['sess_eUser'];
     <table class="content-table">
         <thead>
             <tr>
-                <th style="text-align:center;"></th>
-                <th style="text-align:center;"></th>
+                <!-- <th style="text-align:center;"></th>
+                <th style="text-align:center;"></th> -->
             </tr>
         </thead>
         <?php

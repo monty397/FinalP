@@ -104,7 +104,7 @@ if (isset($_POST['removeItem'])) {
                     </div>
                 </li>
                 <li><a href="customerMenu.php">Menu</a></li>
-                <li><a href="shoppingCart.php">My Cart</a></li>
+                <li><a href="shoppingCart.php">My Cart<img class="cart_img" src="carts.jpg"></a></li>
                 <li><a href="logout.php">Sign out</a></li>
             </ul>
         </nav>
@@ -152,8 +152,8 @@ if (isset($_POST['removeItem'])) {
         ?>
         </table>
         <p>
-        <h2> <?php echo 'Total Cost = $', $total; ?>.00</h2>
-        <p><button class="cart_button" name="submit">Purchase</button>
+        <h2 class="total_c"> <?php echo 'Total Cost = $', $total; ?>.00</h2>
+        <p><button class="cart_button" name="submit">Order</button>
         <p>
         </p>
     </form>
@@ -244,10 +244,10 @@ if (isset($_POST["submit"])) {
         $order_id = mysqli_insert_id($conn);
 
         //inserting item & info into orderItem
-        $query2 = "INSERT INTO orderitem (Order_id, item_name, item_cost, quantity, item_total) VALUES (?,?,?,?,?)";
+        $query2 = "INSERT INTO orderitem (Order_id, item_name, item_cost, quantity, item_total, fname, address, contact) VALUES (?,?,?,?,?, '$fullName', '$address', '$contact')";
         $stmt = mysqli_prepare($conn, $query2);
         if ($stmt) {
-            mysqli_stmt_bind_param($stmt, "isiii", $order_id, $item_name, $item_cost, $quantity, $item_total);
+            mysqli_stmt_bind_param($stmt, "isiii", $order_id, $item_name, $item_cost, $quantity, $item_total,);
             foreach ($_SESSION['cart'] as $key => $value) {
                 $item_name = $value['item_name'];
                 $item_cost = $value['item_price'];

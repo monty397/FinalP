@@ -23,16 +23,7 @@
                 <li><a href="menu.php">Menu</a></li>
                 <li><a href="about.php">About</a></li>
                 <li><a href="userRegistration.php">Sign up</a></li>
-                <li class="dropdown" onmouseover="hover(this);" onmouseout="out(this);"><a href="#">Sign in &nbsp;<i class="fa fa-caret-down"></i></a>
-                    <div class="dd">
-                        <div id="up_arrow"></div>
-                        <ul>
-                            <li><a href="adminLogin.php">Admin</a></li>
-                            <li><a href="userLogin.php">Customer</a></li>
-                            <li><a href="employeeLogin.php">Employee</a></li>
-                        </ul>
-                    </div>
-                </li>
+                <li><a href="userLogin.php">Sign in</a></li>
             </ul>
         </nav>
     </div>

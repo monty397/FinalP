@@ -49,6 +49,7 @@ $row = mysqli_fetch_array($query);
                 <!--  -->
                 <select name="status" style="width:100px; height:50px">
                     <option value="---">---</option>
+                    <option value="Pickup">Pickup</option>
                     <option value="Cancelled">Cancelled</option>
                     <option value="Preparing">Preparing</option>
                     <option value="En Route">En Route</option>

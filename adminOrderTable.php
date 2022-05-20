@@ -59,69 +59,44 @@ $username = $_SESSION['sess_cUser'];
         </nav>
     </div>
 
-    <div class="row">
-        <div class="column">
-            <table>
-                <tr>
-                    <th>ID</th>
-                    <th>Date of Order</th>
-                    <th>Full Name</th>
-                    <th>Address</th>
-                    <th>Contact</th>
-                </tr>
-
-                <?php
-                $sql = "SELECT * FROM userorder";
-                $result = $conn->query($sql);
-                while ($row = mysqli_fetch_array($result)) {
-                ?>
-                    <tr>
-
-                        <td><?php echo $row['order_id']; ?></td>
-                        <td><?php echo $row['date']; ?></td>
-                        <td><?php echo $row['fname']; ?></td>
-                        <td><?php echo $row['address']; ?></td>
-                        <td><?php echo $row['contact']; ?></td>
-                    </tr>
-                <?php
-                }
-                ?>
-            </table>
-        </div>
-        <div class="column">
-            <table>
-                <tr>
-                    <th>ID</th>
-                    <th>Date of Order</th>
-                    <th>Item Name</th>
-                    <th>Item Cost</th>
-                    <th>Quantity</th>
-                    <th>Item Total</th>
-                    <th>Order Status</th>
-                    <th>Edit Status</th>
-                </tr>
-                <?php
-                $sql2 = "SELECT * FROM orderitem";
-                $result2 = $conn->query($sql2);
-                while ($rows = mysqli_fetch_array($result2)) {
-                ?>
-                    <tr>
-
-                        <td><?php echo $rows['order_id']; ?></td>
-                        <td><?php echo $rows['date']; ?></td>
-                        <td><?php echo $rows['item_name']; ?></td>
-                        <td>$<?php echo $rows['item_cost']; ?>.00</td>
-                        <td><?php echo $rows['quantity']; ?></td>
-                        <td>$<?php echo $rows['item_total']; ?>.00</td>
-                        <td><?php echo $rows['status']; ?></td>
-                        <td><a href="editStatus.php?id=<?php echo $rows['order_id']; ?>">Edit</a></td>
-                    </tr>
-                <?php
-                }
-                ?>
-            </table>
-        </div>
-    </div>
+    <h1 id="title">Orders</h1>
+    <table class="content-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Date of Order</th>
+                <th>Item Name</th>
+                <th>Item Cost</th>
+                <th>Quantity</th>
+                <th>Item Total</th>
+                <th>Order Status</th>
+                <th>Full Name</th>
+                <th>Address</th>
+                <th>Contact</th>
+                <th>Edit Status</th>
+            </tr>
+        </thead>
+        <?php
+        $sql2 = "SELECT * FROM orderitem";
+        $result2 = $conn->query($sql2);
+        while ($rows = mysqli_fetch_array($result2)) {
+        ?>
+            <tr>
+                <td><?php echo $rows['order_id']; ?></td>
+                <td><?php echo $rows['date']; ?></td>
+                <td><?php echo $rows['item_name']; ?></td>
+                <td>$<?php echo $rows['item_cost']; ?>.00</td>
+                <td><?php echo $rows['quantity']; ?></td>
+                <td>$<?php echo $rows['item_total']; ?>.00</td>
+                <td><?php echo $rows['fname']; ?></td>
+                <td><?php echo $rows['address']; ?></td>
+                <td><?php echo $rows['contact']; ?></td>
+                <td><?php echo $rows['status']; ?></td>
+                <td><a href="editStatus.php?id=<?php echo $rows['order_id']; ?>">Edit</a></td>
+            <?php
+        }
+            ?>
+    </table>
 </body>
 <footer class="footer-distributed">
     <div class="footer-left">

@@ -12,7 +12,7 @@
     <!-- back to top button  -->
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
-    <div id="container">
+    <!-- <div id="container">
         <nav>
             <div id="logo">
                 Coffee Hub
@@ -34,7 +34,7 @@
                 </li>
             </ul>
         </nav>
-    </div>
+    </div> -->
 
     <div id="login-form-wrap">
         <h2>Employee Login</h2>
@@ -88,44 +88,6 @@
         }
         ?>
     </div>
-
-    <footer class="footer-distributed">
-        <div class="footer-left">
-            <pre>
-            <h3>                  Coffee<span>Hub</span></h3></pre>
-            <p class="footer-links">
-                <a href="home.php" class="link-1">Home</a>
-                <a href="menu.php">Menu</a>
-                <a href="about.php">About</a>
-                <a href="userRegistration.php">Sign Up</a>
-                <a href="userLogin">Sign In</a>
-            </p>
-            <p class="footer-company-name">Coffee Hub © 2021</p>
-        </div>
-
-        <div class="footer-center">
-            <div>
-                <i class="fa fa-map-marker"></i>
-                <p><span>#21 Park Ridge </span> Fyzabad, Trinidad</p>
-            </div>
-            <div>
-                <i class="fa fa-phone"></i>
-                <p>+555-555-5555</p>
-            </div>
-            <div>
-                <i class="fa fa-envelope"></i>
-                <p><a href="mailto:support@company.com">support@coffeehub.com</a></p>
-            </div>
-        </div>
-
-        <div class="footer-right">
-            <p class="footer-company-about">
-                <span>About the company</span>Where our coffee is prepared to satsify the ones we care about most, You!
-            </p>
-            <div class="footer-icons">
-            </div>
-        </div>
-    </footer>
 </body>
 
 </html>

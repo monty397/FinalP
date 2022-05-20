@@ -46,6 +46,9 @@ CREATE TABLE `orderItem` (
   `item_cost` int NOT NULL,
   `quantity` int NOT NULL,
   `item_total` int NOT NULL,
+  `fname` varchar(200) NOT NULL,
+  `address` varchar(200) NOT NULL,
+  `contact` varchar(200) NOT NULL,
   `status` varchar(200) NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
