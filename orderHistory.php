@@ -138,6 +138,44 @@ if ($numrows != 0) {
             document.documentElement.scrollTop = 0;
         }
     </script>
+
+    <footer class="footer-distributed">
+        <div class="footer-left">
+            <pre>
+            <h3>                  Coffee<span>Hub</span></h3></pre>
+            <p class="footer-links">
+                <a href="customerHome.php" class="link-1">Home</a>
+                <a href="customerMenu.php">Menu</a>
+                <a href="shoppingCart.php">Cart</a>
+                <a href="orderHistory.php">My Orders</a>
+                <a href="myCustomerInfo.php">My Info</a>
+            </p>
+            <p class="footer-company-name">Coffee Hub © 2021</p>
+        </div>
+
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>#21 Park Ridge </span> Fyzabad, Trinidad</p>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+555-555-5555</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:support@company.com">support@coffeehub.com</a></p>
+            </div>
+        </div>
+
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>About the company</span>Where our coffee is prepared to satsify the ones we care about most, You!
+            </p>
+            <div class="footer-icons">
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

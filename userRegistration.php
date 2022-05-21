@@ -87,18 +87,18 @@
                     $query = ("SELECT * FROM customer WHERE cust_username='" . $cust_username . "'");
                     $result = mysqli_query($con, $query);
 
-                //     $query1 = ("SELECT username FROM credentials");
-                //     $result1 = mysqli_query($con, $query1);
+                    //     $query1 = ("SELECT username FROM credentials");
+                    //     $result1 = mysqli_query($con, $query1);
 
-                //     $numrows1= mysqli_num_rows($result1);
+                    //     $numrows1= mysqli_num_rows($result1);
 
-                //     if ($numrows1 != 0){
-                //         while ($row = mysqli_fetch_assoc($result)) {
-                //         if ($cust_username == $row['username']) {
-                //             echo "That username already exists! Please try again with another.";
-                //         }
-                //     }
-                // }
+                    //     if ($numrows1 != 0){
+                    //         while ($row = mysqli_fetch_assoc($result)) {
+                    //         if ($cust_username == $row['username']) {
+                    //             echo "That username already exists! Please try again with another.";
+                    //         }
+                    //     }
+                    // }
 
                     $numrows = mysqli_num_rows($result);
                     if ($numrows == 0) {
