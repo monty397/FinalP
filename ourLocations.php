@@ -2,14 +2,13 @@
 <html>
 
 <head>
-    <title>Log in | CoffeeHub</title>
+    <title>Our Locations | CoffeeHub</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <meta name="viewpoint" content="width=device-width, intial-scale=1.0">
 </head>
 
 <body>
-
     <!-- back to top button  -->
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
@@ -28,60 +27,9 @@
         </nav>
     </div>
 
-    <div id="login-form-wrap">
-        <h2>Customer Login</h2>
-        <form action="" method="POST">
-            <p>
-                <input type="text" name="cust_username" placeholder="Enter your Username" required><i class="validation"><span></span><span></span></i>
-            </p>
-            <p>
-                <input type="password" name="cust_password" placeholder="Enter your Password" required><i class="validation"><span></span><span></span></i>
-            </p>
-            <p>
-                <input type="submit" name="submit" value="Login">
-            </p>
-        </form>
-        <div id="create-account-wrap">
-            <p>Not a member? <a href="sign%20up.html">Create Account</a>
-            <p>
-        </div>
-        <!--create-account-wrap-->
-        <?php
-        if (isset($_POST["submit"])) {
+    <br><br>
+    <p><iframe src="https://www.google.com/maps/d/embed?mid=1mtVZm12ZoskixGoT0XvZQG5_tWPGlwI&ehbc=2E312F" width="1000" height="600"></iframe></p>
 
-            if (!empty($_POST['cust_username']) && !empty($_POST['cust_password'])) {
-
-                $cust_username = $_POST['cust_username'];
-                $cust_password = $_POST['cust_password'];
-                $con = mysqli_connect('localhost', 'root', '', 'coffee') or die("Connection failed: %s\n" . $conn->error);
-
-                $query = ("SELECT cust_username, cust_password FROM customer WHERE cust_username='" . $cust_username . "' AND cust_password='" . $cust_password . "'");
-                $result = mysqli_query($con, $query);
-                $numrows = mysqli_num_rows($result);
-
-
-                if ($numrows != 0) {
-                    while ($row = mysqli_fetch_assoc($result)) {
-                        $dbusername = $row['cust_username'];
-                        $dbpassword = $row['cust_password'];
-                    }
-
-                    if ($cust_username == $dbusername && $cust_password == $dbpassword) {
-                        session_start();
-                        $_SESSION['sess_user'] = $cust_username;
-
-                        /* Redirect browser */
-                        header("Location: customerHome.php");
-                    }
-                } else {
-                    echo "Invalid username or password!";
-                }
-            } else {
-                echo "All fields are required!";
-            }
-        }
-        ?>
-    </div>
     <footer class="footer-distributed">
         <div class="footer-left">
             <pre>

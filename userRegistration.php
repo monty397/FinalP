@@ -21,7 +21,7 @@
             <ul>
                 <li><a href="home.php">Home</a></li>
                 <li><a href="menu.php">Menu</a></li>
-                <li><a href="about.php">About</a></li>
+                <li><a href="ourLocations.php">Locations</a></li>
                 <li><a href="userRegistration.php">Sign up</a></li>
                 <li><a href="userLogin.php">Sign in</a></li>
             </ul>
@@ -87,19 +87,6 @@
                     $query = ("SELECT * FROM customer WHERE cust_username='" . $cust_username . "'");
                     $result = mysqli_query($con, $query);
 
-                    //     $query1 = ("SELECT username FROM credentials");
-                    //     $result1 = mysqli_query($con, $query1);
-
-                    //     $numrows1= mysqli_num_rows($result1);
-
-                    //     if ($numrows1 != 0){
-                    //         while ($row = mysqli_fetch_assoc($result)) {
-                    //         if ($cust_username == $row['username']) {
-                    //             echo "That username already exists! Please try again with another.";
-                    //         }
-                    //     }
-                    // }
-
                     $numrows = mysqli_num_rows($result);
                     if ($numrows == 0) {
                         $sql = "INSERT INTO customer (cust_name, cust_username, cust_email, cust_address, cust_contact, cust_password) VALUES('$cust_name','$cust_username', '$cust_email', '$cust_address', '$cust_contact', '$cust_password')";
@@ -132,7 +119,7 @@
             <p class="footer-links">
                 <a href="home.php" class="link-1">Home</a>
                 <a href="menu.php">Menu</a>
-                <a href="about.php">About</a>
+                <a href="ourLocations.php">Our Locations</a>
                 <a href="userRegistration.php">Sign Up</a>
                 <a href="userLogin">Sign In</a>
             </p>

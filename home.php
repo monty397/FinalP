@@ -20,7 +20,7 @@
             <ul>
                 <li><a href="home.php">Home</a></li>
                 <li><a href="menu.php">Menu</a></li>
-                <li><a href="about.php">About</a></li>
+                <li><a href="ourLocations.php">Locations</a></li>
                 <li><a href="userRegistration.php">Sign up</a></li>
                 <li><a href="userLogin.php">Sign in</a></li>
             </ul>
@@ -88,7 +88,7 @@
         </div>
         <div class="box3">
             <div>
-                <img class="home_img" src="location.png">
+                <a href="ourLocations.php"><img class="home_img" src="location.png"></a>
             </div>
             <h2>Our Locations</h2>
             <p>Port-of-Spain, San-Fernando, Chaguanas, Fyzabad, Penal, Debe.</p>
@@ -103,7 +103,7 @@
             <p class="footer-links">
                 <a href="home.php" class="link-1">Home</a>
                 <a href="menu.php">Menu</a>
-                <a href="about.php">About</a>
+                <a href="ourLocations.php">Our Locations</a>
                 <a href="userRegistration.php">Sign Up</a>
                 <a href="userLogin">Sign In</a>
             </p>
