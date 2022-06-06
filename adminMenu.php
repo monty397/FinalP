@@ -69,8 +69,8 @@ $result = $conn->query($sql);
                 <p>
                     <img src="coffee/<?php echo $rows['item_image']; ?>" alt=" " height="250px" width="250px"><br>
                     <?php echo $rows['item_name']; ?><br>
-                    $<?php echo $rows['item_price']; ?>.00
-
+                    $<?php echo $rows['item_price']; ?>.00<br>
+                    <a href="editCost.php?id=<?php echo $rows['item_id']; ?>">Edit Cost</a>
                 </p>
             </article>
         <?php

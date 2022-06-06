@@ -6,8 +6,8 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url("coffeeb.jpg");
-    /* background-color: #FFEEB4; */
+    /* background-image: url("coffeeb.jpg"); */
+    background-color: #B8A79F;
 }
 
 
@@ -73,6 +73,7 @@ pre {
 }
 
 .container .box1 {
+    /* margin-top: -30px; */
     position: relative;
     width: 320px;
     background-color: #fff;
@@ -186,6 +187,20 @@ pre {
     width: 40%;
     letter-spacing: 2px;
     text-shadow: 2px 2px 5px;
+}
+
+#logo2 {
+    /* margin: 0 auto; */
+    margin-top: 80px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 50px;
+    font-weight: bold;
+    padding: 0 50px;
+    color: black;
+    /* width: 100%; */
+    letter-spacing: 2px;
+    /* text-shadow: 2px 2px 5px; */
 }
 
 #container>nav>ul {
