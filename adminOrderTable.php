@@ -69,10 +69,10 @@ $username = $_SESSION['sess_cUser'];
                 <th>Item Cost</th>
                 <th>Quantity</th>
                 <th>Item Total</th>
-                <th>Order Status</th>
                 <th>Full Name</th>
                 <th>Address</th>
                 <th>Contact</th>
+                <th>Order Status</th>
                 <th>Edit Status</th>
             </tr>
         </thead>

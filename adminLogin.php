@@ -11,30 +11,6 @@
 <body>
     <!-- back to top button  -->
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-    
-    <!-- <div id="container">
-        <nav>
-            <div id="logo">
-                Coffee Hub
-            </div>
-            <ul>
-                <li><a href="home.php">Home</a></li>
-                <li><a href="menu.php">Menu</a></li>
-                <li><a href="about.php">About</a></li>
-                <li><a href="userRegistration.php">Sign up</a></li>
-                <li class="dropdown" onmouseover="hover(this);" onmouseout="out(this);"><a href="#">Sign in &nbsp;<i class="fa fa-caret-down"></i></a>
-                    <div class="dd">
-                        <div id="up_arrow"></div>
-                        <ul>
-                            <li><a href="adminLogin.php">Admin</a></li>
-                            <li><a href="userLogin.php">Customer</a></li>
-                            <li><a href="employeeLogin.php">Employee</a></li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
-        </nav>
-    </div> -->
 
     <div id="login-form-wrap">
         <h2>Admin Login</h2>

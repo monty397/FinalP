@@ -59,8 +59,6 @@ $username = $_SESSION['sess_user'];
     <table class="content-table">
         <thead>
             <tr>
-                <!-- <th style="text-align:center;"></th>
-                <th style="text-align:center;"></th> -->
             </tr>
         </thead>
 

@@ -135,10 +135,6 @@ $username = $_SESSION['sess_cUser'];
             <span>About the company</span>Where our coffee is prepared to satsify the ones we care about most, You!
         </p>
         <div class="footer-icons">
-            <!-- <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-linkedin"></i></a>
-            <a href="#"><i class="fa fa-github"></i></a> -->
         </div>
     </div>
 </footer>
