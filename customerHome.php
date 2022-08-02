@@ -48,7 +48,7 @@ $username = $_SESSION['sess_user'];
           </div>
         </li>
         <li><a href="customerMenu.php">Menu</a></li>
-        <li><a href="shoppingCart.php">My Cart<img class="cart_img" src="carts.jpg"></a></li>
+        <li><a href="shoppingCart.php">My Cart</a></li>
         <li><a href="logout.php">Sign out</a></li>
       </ul>
     </nav>

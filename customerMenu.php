@@ -50,7 +50,7 @@ $result = $conn->query($sql);
                     </div>
                 </li>
                 <li><a href="customerMenu.php">Menu</a></li>
-                <li><a href="shoppingCart.php">My Cart<img class="cart_img" src="carts.jpg"></a></li>
+                <li><a href="shoppingCart.php">My Cart</a></li>
                 <li><a href="logout.php">Sign out</a></li>
             </ul>
         </nav>
@@ -69,7 +69,7 @@ $result = $conn->query($sql);
                         $<?php echo $rows['item_price']; ?>
                         <input type="hidden" name="item_name" value="<?= $rows['item_name']; ?>" />
                         <input type="hidden" name="item_price" value="<?= $rows['item_price']; ?>" />
-                        <input type="number" name="quantity" value="1"></td>
+                        <input type="number" name="quantity" value="1" min="1" max="20"></td>
                         <button class="add_to_cart" name="add_cart">Add to Cart</button></td>
                     </p>
                 </form>
